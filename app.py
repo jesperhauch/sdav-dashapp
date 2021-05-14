@@ -1019,7 +1019,7 @@ index_page = html.Div([
         Output("no_bars_stats", "children"),
         Output("no_properties_stats", "children")
     ],
-    Input('suburb_drop_stats', 'value')
+    [Input('suburb_drop_stats', 'value')]
 )
 def update_kpis(suburb_select):
     if suburb_select in df_merge.geom_suburb.unique().tolist():
@@ -1048,7 +1048,7 @@ def update_kpis(suburb_select):
     Output("grid3_4", "figure"),
     Output("grid3_5", "figure"),
     Output("grid3_6", "figure")],
-    Input("suburb_drop_stats", "value")
+    [Input("suburb_drop_stats", "value")]
 )
 def create_housing_row(suburb_select):
     if suburb_select in df_merge.geom_suburb.unique().tolist():
