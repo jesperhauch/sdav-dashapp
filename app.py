@@ -63,7 +63,7 @@ df_merge['Properties per Bar'] = df_merge['Propertycount'] / df_merge['Bars']
 # In[4]:
 
 
-shape_path = r"AUS Shape files\AUS_adm2.shp"
+shape_path = r"app\AUS Shape files\AUS_adm2.shp"
 shapes = gpd.read_file(os.path.join(path, shape_path))
 shapes = shapes[shapes.NAME_1 == "Victoria"].reset_index(drop=True)
 shapes.NAME_2 = shapes.NAME_2.str.replace("S'bank-D'lands", "Southbank - Docklands")
