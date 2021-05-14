@@ -228,7 +228,7 @@ general_stats_layout = html.Div(style=app_style,children=[
                                                           "padding-left": 5, "padding-right": 5}
             ),
             html.Img(
-                src=app.get_asset_url("melbourne.png"),
+                src=os.path.join(os.getcwd(),"melbourne.png"),
                 className='two columns',
                 style={
                     'height': '12%',
@@ -384,7 +384,7 @@ housing_layout = html.Div(style=app_style,children=[
                                                           "padding-left": 5, "padding-right": 5}
             ),
             html.Img(
-                src=app.get_asset_url("melbourne.png"),
+                src=os.path.join(os.getcwd(),"melbourne.png"),
                 className='two columns',
                 style={
                     'height': '12%',
@@ -559,7 +559,7 @@ area_niceness_layout = html.Div(style=app_style,children=[
                                                           "padding-left": 5, "padding-right": 5}
             ),
             html.Img(
-                src=app.get_asset_url("melbourne.png"),
+                src=os.path.join(os.getcwd(),"melbourne.png"),
                 className='two columns',
                 style={
                     'height': '12%',
@@ -779,7 +779,7 @@ model_layout = html.Div(style=app_style,children=[
                                                           "padding-left": 5, "padding-right": 5}
             ),
             html.Img(
-                src=app.get_asset_url("melbourne.png"),
+                src=os.path.join(os.getcwd(),"melbourne.png"),
                 className='two columns',
                 style={
                     'height': '12%',
@@ -975,7 +975,7 @@ index_page = html.Div([
                                                           "padding-left": 5, "padding-right": 5}
             ),
             html.Img(
-                src=app.get_asset_url("melbourne.png"),
+                src=os.path.join(os.getcwd(),"melbourne.png"),
                 className='two columns',
                 style={
                     'height': '12%',
