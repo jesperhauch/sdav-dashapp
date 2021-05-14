@@ -931,7 +931,7 @@ import dash_html_components as html
 # the exception.
 ext_style = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d266c578d2a6e8850ebce48fdb52759b2aef506/stylesheet-oil-and-gas.css']
 app = JupyterDash(__name__, external_stylesheets = ext_style, suppress_callback_exceptions = True)
-
+server = app.server
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content')
