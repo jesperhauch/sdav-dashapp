@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 
 # Dash
 import dash
-from jupyter_dash import JupyterDash
+#from jupyter_dash import JupyterDash
 import dash_core_components as dcc
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
@@ -929,7 +929,7 @@ import dash_html_components as html
 # In this case, we're adding the elements through a callback, so we can ignore
 # the exception.
 ext_style = ['https://cdn.rawgit.com/plotly/dash-app-stylesheets/2d266c578d2a6e8850ebce48fdb52759b2aef506/stylesheet-oil-and-gas.css']
-app = JupyterDash(__name__, external_stylesheets = ext_style, suppress_callback_exceptions = True)
+app = dash.Dash(__name__, external_stylesheets = ext_style, suppress_callback_exceptions = True)
 server = app.server
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
