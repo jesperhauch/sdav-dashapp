@@ -25,7 +25,6 @@ import geopandas as gpd
 import numpy as np
 
 # Other
-import copy
 import matplotlib.pyplot as plt
 import os
 
